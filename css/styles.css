@@ -1,0 +1,93 @@
+html {
+    background-color:rgb(229, 255, 242);
+    font-family: Helvetica, sans-serif;
+}
+
+p{
+    line-height:1.5em;
+}
+
+#main-heading {
+    font-family: 'Caveat', cursive;
+    font-size: 3em;
+    text-align: center;
+    border-bottom: 2px solid #416788;
+    color:rgb(255, 167, 0);
+    background-color:rgb(230, 230, 250);
+}
+#main-heading:hover, #main-heading:focus {
+    background-color: #416788;
+}
+
+.recipe {
+    color:rgb(0, 49 , 83); 
+    background-color:/* #7D82B8*/ rgb(204, 149, 204);
+    border: 1px solid #7D82B8 ;
+}
+.contents {
+    border: 5px groove #5FB49C;
+    background-color: #98DFAF;
+    padding-left: 5px;
+}
+
+ol.contents {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+table {
+    margin: 5px;
+    border: 2px solid #B7E3CC;
+    font-family: Lato, sans-serif;
+}
+
+table:hover, table:active, table:focus {
+    background-color: #B7E3CC;
+}
+
+.recipe {
+    border: 2px solid #2B4162;
+    padding: 1px 0px 1px 5px;
+    border-radius: 7px;
+}
+
+.image {
+    width: 150px;
+    float: right;
+    border: 10px ridge #FA9F42;
+    margin-right: 5px;
+    padding: 1px;
+}
+
+.image:hover, .image:active, .image:focus {
+    width: 200px;
+    position: relative;
+}
+
+a:hover, a:active, a:focus {
+    background-color: #FA9F42;
+    border:2px solid #416788;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#spl-para {
+    line-height:1em;
+    font-size:0.8em;
+    font-weight: bold;
+}
+#spl-image {
+    position:absolute;
+    margin-top: -128px;
+    margin-left:442px;
+    width:60px;
+    z-index:2;
+}
+
+/* I just learnt about the selection */
+::selection {
+    background-color: rgb(29, 204, 160);
+    color: rgb(255, 0, 64);
+}
