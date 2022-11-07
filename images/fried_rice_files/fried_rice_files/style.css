@@ -1,0 +1,1652 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #ffffff none repeat scroll 0 0;
+    color: #666666;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    margin: 0;
+    height: 100%;
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+hr {
+    border: none;
+    margin: 30px 0;
+    border-top: 1px solid #ccc;
+}
+
+hr.dashed {
+    border-top-style: dashed;
+}
+
+hr.m10 {
+    margin: 10px 0;
+}
+
+
+/*p { line-height: 26px; margin: 0 0 20px; padding: 0; }*/
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    line-height: 26px;
+    color: #323c41;
+}
+
+a {
+    /*letter-spacing: 1px; */
+    color: #323c41;
+    text-decoration: none;
+    cursor: pointer;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+
+a:hover,
+.a-link:hover,
+a:focus,
+a:active {
+    outline: medium none;
+    text-decoration: none;
+    color: #323c41;
+}
+
+a img {
+    border: 0 none;
+}
+
+p {
+    cursor: context-menu;
+    word-wrap: break-word;
+    text-transform: none;
+    margin: 0;
+    /*letter-spacing: 1px; */
+    color: #323c41;
+    text-decoration: none;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+
+p:hover,
+.p-link:hover,
+p:focus,
+p:active {
+    outline: medium none;
+    text-decoration: none;
+    color: #323c41;
+    cursor: context-menu;
+}
+
+*::selection {
+    background: #323c41;
+    color: #fff;
+}
+
+p img {
+    border: 0 none;
+}
+
+.clr {
+    clear: both;
+    display: block;
+    float: none;
+}
+
+.c {
+    float: none;
+    overflow: hidden;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+strong {
+    font-weight: 700;
+}
+
+h1 strong {
+    font-weight: 600;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    color: #666666;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+    font-weight: 400;
+    padding: 10px 15px;
+    resize: vertical;
+    max-width: 100%;
+}
+
+select {
+    padding: 9px 15px;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    border: none;
+    background: none;
+    max-width: 100%;
+}
+
+input.fullwidth,
+select.fullwidth,
+textarea.fullwidth {
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    background-color: #fff;
+    border-color: #c6c6c6;
+}
+
+input[type="text"][disabled],
+input[type="url"][disabled],
+input[type="tel"][disabled],
+input[type="email"][disabled],
+input[type="password"][disabled],
+input[type="number"][disabled],
+select[disabled],
+textarea[disabled] {
+    background-color: #f1f1f1;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    vertical-align: -2px;
+}
+
+.bold,
+input.bold {
+    font-weight: 700;
+}
+
+.cfx::after {
+    clear: both;
+    content: "+";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.hrefing {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.hrefstar * {
+    cursor: pointer !important;
+}
+
+.noPad {
+    padding: 0 !important;
+}
+
+
+/*.hide {
+	visibility: hidden;
+}*/
+
+
+/*loading*/
+
+@keyframes blink {
+    0% {
+        opacity: .2;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .2;
+    }
+}
+
+.saving {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.saving span {
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    font-size: 25px;
+    display: inline-block;
+    width: 15px;
+}
+
+.saving span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.saving span:nth-child(3) {
+    animation-delay: .4s;
+}
+
+
+/*------HEAD------*/
+
+.userName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 110px;
+}
+
+
+/*loading*/
+
+#connctd {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1070;
+    text-align: center;
+    background-color: rgba(63, 63, 63, 0.4);
+}
+
+#connctd p {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.conblur {
+    filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bgImg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    padding: 0px;
+}
+
+.bannerCont .caro {
+    padding: 0 7.3%;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.paddngTop63 {
+    padding-top: 78px;
+    min-height: 90vh;
+}
+
+
+/*  safari css*/
+
+.safari select {
+    margin-top: 10px;
+}
+
+
+/* Site Content Start Here */
+
+
+/*------------mobile menu------*/
+
+#mob_menu {
+    background-color: #323c41;
+    color: #fff;
+    height: 100%;
+    left: -100%;
+    opacity: 1;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    max-width: 300px;
+    width: 100%;
+    z-index: 1055;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#mob_menu.show_menu {
+    left: 0px;
+}
+
+#mob_menu .close_btn a {
+    color: #fff;
+    font-size: 26px;
+    margin: 15px 0;
+    display: inline-block;
+}
+
+#mob_menu ul li p {
+    font-size: 13px;
+}
+
+#mob_menu .close_btn .mobClose img {
+    margin: -5px 0;
+    width: 42px;
+    height: 42px;
+}
+
+#mob_menu ul.mobileTab,
+#mob_menu ul.mobileTab li.mob_li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#mob_menu ul.mobileTab li.mob_li {
+    display: block;
+}
+
+#mob_menu ul.mobileTab li.mob_li a {
+    display: block;
+    font-size: 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 4px 15px 4px 30px;
+}
+
+.mobile_menu #topHeadr a {
+    padding-left: 0;
+}
+
+#mob_menu ul.mobileTab li.mob_li:hover>a {
+    color: #fff;
+}
+
+#mob_menu ul.mobileTab li.mob_li a .fa {
+    margin-left: 4px;
+}
+
+#mob_menu ul.mobileTab li.mob_li ul {
+    /*padding-left: 40px;*/
+    margin-bottom: 10px;
+}
+
+.mobile_menu .searchForm {
+    margin: 0;
+    padding: 4px 15px;
+}
+
+.mobile_menu .searchForm input {
+    max-width: 100%;
+    height: 30px;
+}
+
+.mobIcn,
+.mobSearch {
+    display: none;
+}
+
+.mobIcn img {
+    width: 27px;
+    height: 26px;
+}
+
+.mobile_menu .userName,
+.mobile_menu .caretCntr {
+    color: white;
+}
+
+.mobile_menu .userProf {
+    margin: 15px;
+}
+
+.mobile_menu #topHeadr {
+    margin-left: 15px;
+}
+
+.mob_li .searchForm {
+    padding: 4px 15px 4px 30px;
+}
+
+#topHeadr li>a {
+    color: #323c41 !important;
+    text-transform: none;
+    list-style: none;
+}
+
+
+/*------------btn------*/
+
+.btnPrimary {
+    background-color: transparent;
+    border: 2px solid #323c41;
+    color: #323c41;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 152px;
+    padding: 11px 20px;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+    text-align: center;
+}
+
+.btnPrimary:hover {
+    border-color: #ff9509;
+    color: #ff9509;
+}
+
+.btnPrimary.secondary {
+    color: #ebece9;
+    border-radius: 18px;
+    background: #323c41;
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+.btnPrimary.secondary:hover {
+    color: white;
+    border-color: #ff9509;
+    background-color: #ff9509;
+}
+
+.contentSect {
+    padding: 100px 0;
+}
+
+
+/*-----------------*/
+
+
+/*-------drop_down animate------*/
+
+.animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+
+/*------------main nav------*/
+
+.searchForm {
+    margin: 17px 0;
+}
+
+.searchForm input:focus {
+    outline: none;
+}
+
+.searchForm input,
+.searchForm button {
+    height: auto;
+    padding: 0 10px;
+    float: left;
+    /* font-size: 14px; */
+}
+
+.searchForm button {
+    border: 1px solid #43a629;
+    border: 1px solid #323c41;
+    color: #fff;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.searchForm button:focus {
+    outline: none;
+}
+
+input.searchInput:focus {
+    outline: none;
+}
+
+.searchForm input {
+    /*border-radius: 50px 0px 0px 50px;*/
+    border-radius: 50px;
+    width: 220px;
+    letter-spacing: .5px;
+}
+
+.searchForm ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #c1c1c1;
+    opacity: 1;
+    /* Firefox */
+}
+
+.searchForm :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #c1c1c1;
+}
+
+.topNav {
+    box-shadow: 0 0 6px rgba(0, 0, 0, .15);
+    font-size: 10pt;
+    font-weight: 500;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    width: 100%;
+}
+
+.size30 {
+    font-size: 30px;
+}
+
+.logoSect a {
+    display: block;
+}
+
+.logo,
+.logo:hover,
+.logo:visited {
+    cursor: pointer;
+    text-align: center;
+}
+
+.logoimg {
+    height: 78px;
+    width: 154px;
+}
+
+ul.mainTab {
+    text-align: center;
+}
+
+.topNav .mainNav ul li {
+    list-style: none;
+    margin-left: 7%;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-flex;
+}
+
+.topNav .mainNav ul li a {
+    color: #323c41;
+    padding: 25px 0;
+    border-bottom: 2px solid transparent;
+    display: block;
+    cursor: pointer;
+}
+
+.signin {
+    background-color: #323c41;
+    color: #fff !important;
+    padding: 7px 15px;
+    border-radius: 18px;
+}
+
+.topNav .mainNav ul li a:hover,
+.topNav .mainNav ul li.active a {
+    color: #323c41;
+    border-bottom: 2px solid #323c41;
+}
+
+.innerBanner {
+    padding: 100px 0;
+}
+
+
+/*-!-!-!---searchbar start---!-!-!-*/
+
+.searchBarSpanMain {
+    text-align: center;
+}
+
+.mainSearchbar {
+    background-color: white;
+    padding: 24px 10px;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+form.searchBarFormMain {
+    padding: 0;
+    display: inline-block;
+    min-width: 48%;
+    position: relative;
+}
+
+input.searchBarInputMain,
+input.searchBarInputMain:hover,
+input.searchBarInputMain:active,
+input.searchBarInputMain:focus,
+input.searchBarInputMain:visited {
+    background: #f2f2f2;
+    padding: 0 15px 0 35px;
+    height: 35px;
+    color: #666;
+    outline: 0;
+    border: 0;
+    -webkit-appearance: none;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+button.searchBarButtonMain {
+    background-color: transparent;
+    background-size: 19px 19px;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    font-size: 10pt;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    color: #323c41;
+}
+
+button.CategoryButton {
+    background-color: #f2f2f2;
+    background-size: 19px 19px;
+    height: 35px;
+    margin-top: 1px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    padding: 0px 15px;
+    border: 1px solid #ddd;
+    color: #323c41;
+    min-width: 20%;
+    max-width: 140px;
+}
+
+.CategoryButton:hover,
+form.searchBarFormMain:hover {
+    transform: scale(1.02);
+}
+
+button.CategoryButton span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+button.CategoryButton:before {
+    float: right;
+    padding-left: 10px;
+}
+
+
+/*--------login start--------*/
+
+.modal-body {
+    padding: 0;
+}
+
+.noborder {
+    border: 0;
+    position: absolute;
+    padding: 0;
+    right: 50px;
+    top: 50px;
+}
+
+.modalWidth {
+    width: 1000px;
+}
+
+#myModal {
+    z-index: 1060;
+}
+
+.modalPop {
+    height: 495px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.modalLeft {
+    width: 40%;
+    float: left;
+    padding: 50px;
+}
+
+.modalRight {
+    float: right;
+    width: 60%;
+}
+
+.modalOne p {
+    color: #999d9f;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: none;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+.modalOne {
+    margin-bottom: 20px;
+}
+
+.modalEmail,
+.modalPass,
+.modalBtn,
+.seperator,
+.loginBtn {
+    margin: 20px auto;
+}
+
+.modalEmail input,
+.modalPass input,
+.modalEmail input:focus,
+.modalPass input:focus {
+    width: 100%;
+    background-color: #EBECE9;
+    border: 1px solid #EBECE9;
+    color: #999d9f;
+    outline: none;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.btnOne {
+    float: left;
+}
+
+.btnTwo {
+    float: right;
+}
+
+.btnOne,
+.btnTwo {
+    width: 46%;
+    height: 40px;
+    background-color: #EBECE9;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.btnOne p,
+.btnTwo p {
+    cursor: pointer;
+}
+
+.btnOne:hover {
+    background-color: #3b5998;
+}
+
+.btnOne:hover p,
+.btnTwo:hover p {
+    color: #e2ecea !important;
+}
+
+.btnTwo:hover {
+    background-color: #d34836;
+}
+
+.modalBtn div.active a {
+    color: #ffffff;
+}
+
+.modalBtn div.active {
+    background-color: #1ba63b;
+}
+
+.noborder .close {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+.modalLeft .modalEmail input[type=text] {
+    width: 180px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 12px 20px 12px 12px;
+}
+
+.separator {
+    position: relative;
+    width: 100%;
+    padding: 0 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+div.separator::before {
+    width: 50%;
+    border-top: 1px solid #e0e0de;
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 50%;
+}
+
+div.separator::after {
+    width: 50%;
+    border-top: 1px solid #e0e0de;
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 10px;
+}
+
+.modalOver {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 325px;
+}
+
+.modalOver div p {
+    text-transform: none;
+}
+
+.overHead {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.overBody {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/*login*/
+
+.userImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.userImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+}
+
+.userNam {
+    float: left;
+    margin-right: 5px;
+}
+
+.userProf {
+    margin: 16px 0;
+}
+
+.caretCntr {
+    margin: 12px 0;
+}
+
+#headrOut {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#headrOut>a {
+    padding: 5px 10px;
+    border: none !important;
+}
+
+
+/*---all css---*/
+
+.divLeft {
+    float: left;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 70%;
+    height: 90vh;
+    padding: 0 30px;
+}
+
+.divRight {
+    overflow-x: hidden;
+    width: 30%;
+    height: 100vh;
+    padding: 40px;
+}
+
+.divLeftRdetails {
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    border-right: 2px solid #eaeaea;
+}
+
+
+/*scroll*/
+
+.divLeft::-webkit-scrollbar {
+    width: 14px;
+}
+
+.divLeft::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-left: 6px solid white;
+    border-right: 6px solid white;
+}
+
+.divLeft::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    border-left: 6px solid #f1f1f1;
+    border-right: 6px solid #f1f1f1;
+}
+
+.contestRight {
+    overflow-x: hidden;
+    width: 30%;
+    padding: 30px;
+    height: 90vh;
+}
+
+.contestRight.fullHeight {
+    height: auto;
+}
+
+.decontainer {
+    background-color: white;
+}
+
+.noCont,
+.noRecs {
+    text-align: center;
+    padding: 200px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.noCont p,
+.noRont p,
+.noRecs p {
+    color: #b7b7b7;
+}
+
+.noRont {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.socialIcon {
+    float: right;
+    /*
+	display: none;*/
+}
+
+.socialIcon img {
+    padding-left: 15px;
+    float: LEFT;
+    width: 52px;
+}
+
+
+/*---home.css---*/
+
+
+/*---recipedetails.css---*/
+
+
+/*---contestdetails.css---*/
+
+
+/*---selectedrecipes.css---*/
+
+
+/*---profile.css---*/
+
+
+/*---edit.css---*/
+
+
+/*------------footer end------*/
+
+.copyright {
+    box-shadow: 0 0 6px rgba(0, 0, 0, .15);
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    color: #627794;
+    padding: 40px 10px;
+}
+
+.footerTag {
+    margin: 0 10px;
+}
+
+.socialBtn {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+/*------------responsive end------*/
+
+@media only screen and (min-width: 200px) and (max-width: 479px) {
+    .topNav.container {
+        width: 100%;
+    }
+    /*.paddngTop63 {
+		padding-top: 90px;
+	}*/
+    /*login page*/
+    .modalLeft {
+        width: 100%;
+        padding: 25px;
+        overflow: hidden;
+    }
+    .noborder .close {
+        width: 10px;
+        height: 10px;
+    }
+    .noborder {
+        right: 15px;
+        top: 15px;
+    }
+    .modalOver {
+        bottom: 10px;
+        right: 10px;
+        width: 280px;
+        margin-left: 10px;
+    }
+    .overHead {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+    .overBody {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .modalPop {
+        max-height: 95vh;
+        background-position: unset;
+    }
+    .modalWidth {
+        width: unset;
+        max-width: 320px;
+        margin: 10px auto;
+    }
+    /*-----all css-----*/
+    .divLeft {
+        width: 100%;
+        height: auto;
+        overflow-y: auto;
+        padding: 0px;
+        float: none;
+    }
+    .divLeftRdetails {
+        width: 100%;
+        height: auto;
+        overflow-y: auto;
+        padding: 0px;
+        float: none;
+        border: none;
+    }
+    .divLeftRdetails.fullHeight {
+        overflow-y: hidden;
+    }
+    .divLeft::-webkit-scrollbar {
+        width: 0px;
+    }
+    .contestRight {
+        width: 320px;
+        margin: 0 AUTO;
+        height: auto;
+        padding: 10px;
+        border-top: 1px solid #eaeaea;
+        padding-top: 20px;
+    }
+    .contestRight::-webkit-scrollbar {
+        width: 0px;
+    }
+    .socialIcon {
+        display: none;
+    }
+    /*-----home.css-----*/
+    /*-----contest.css-----*/
+    /*-----contestdetails.css-----*/
+    /*-----recipedetais.css-----*/
+    /*-----selectedrecipes.css-----*/
+    /*-----profile.css-----*/
+}
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+    .topNav.container {
+        width: 100%;
+    }
+    /*.paddngTop63 {
+		padding-top: 90px;
+	}*/
+    /*login page*/
+    .modalLeft {
+        width: 100%;
+        padding: 25px;
+        overflow: hidden;
+    }
+    .noborder .close {
+        width: 10px;
+        height: 10px;
+    }
+    .noborder {
+        right: 15px;
+        top: 15px;
+    }
+    .modalOver {
+        bottom: 10px;
+        right: 10px;
+        width: 280px;
+        margin-left: 10px;
+    }
+    .overHead {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+    .overBody {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .modalPop {
+        max-height: 95vh;
+        background-position: unset;
+    }
+    .modalWidth {
+        width: unset;
+        max-width: 480px;
+        margin: 10px auto;
+    }
+    .btnOne,
+    .btnTwo {
+        max-width: 140px;
+        border: 1px solid #6666663b;
+    }
+    /*-----all css-----*/
+    .divLeft {
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+        padding: 0px;
+    }
+    .divLeftRdetails {
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+        padding: 0px;
+        border: none;
+    }
+    .divLeftRdetails.fullHeight {
+        overflow-y: hidden;
+    }
+    .divLeft::-webkit-scrollbar {
+        width: 0px;
+    }
+    .contestRight {
+        width: 480px;
+        margin: 0 AUTO;
+        height: auto;
+        padding: 10px;
+        border-top: 1px solid #eaeaea;
+        padding-top: 20px;
+    }
+    .contestRight::-webkit-scrollbar {
+        width: 0px;
+    }
+    .socialIcon {
+        display: none;
+    }
+    /*-----home.css-----*/
+    /*-----contest.css-----*/
+    /*-----contestdetails.css-----*/
+    /*-----recipedetais.css-----*/
+    /*-----selectedrecipes.css-----*/
+    /*-----profile.css-----*/
+}
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+    .topNav.container {
+        width: 100%;
+    }
+    /*.paddngTop63 {
+		padding-top: 90px;
+	}*/
+    /*login page*/
+    .modalLeft {
+        width: 100%;
+        padding: 25px;
+        overflow: hidden;
+    }
+    .noborder .close {
+        width: 10px;
+        height: 10px;
+    }
+    .noborder {
+        right: 15px;
+        top: 15px;
+    }
+    .modalOver {
+        bottom: 10px;
+        right: 10px;
+        width: 280px;
+        margin-left: 10px;
+    }
+    .overHead {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+    .overBody {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .modalPop {
+        max-height: 95vh;
+        background-position: unset;
+    }
+    .modalWidth {
+        width: unset;
+        max-width: 640px;
+        margin: 10px auto;
+    }
+    .loginBtn {
+        margin: 30px 75px;
+    }
+    .btnOne,
+    .btnTwo {
+        max-width: 140px;
+        border: 1px solid #6666663b;
+    }
+    /*-----all css-----*/
+    .divLeft {
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+        padding: 0px;
+    }
+    .divLeftRdetails {
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+        padding: 0px;
+        border: none;
+    }
+    .divLeftRdetails.fullHeight {
+        overflow-y: hidden;
+    }
+    .divLeft::-webkit-scrollbar {
+        width: 0px;
+    }
+    .contestRight {
+        width: 640px;
+        margin: 0 AUTO;
+        height: auto;
+        padding: 10px;
+        border-top: 1px solid #eaeaea;
+        padding-top: 20px;
+    }
+    .contestRight::-webkit-scrollbar {
+        width: 0px;
+    }
+    .socialIcon {
+        display: none;
+    }
+    /*-----home.css-----*/
+    /*-----contest.css-----*/
+    /*-----contestdetails.css-----*/
+    /*-----recipedetais.css-----*/
+    /*-----selectedrecipes.css-----*/
+    /*-----profile.css-----*/
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    /*.paddngTop63 {
+		padding-top: 90px;
+	}*/
+    .modalWidth {
+        width: unset;
+        max-width: 769px;
+        margin: 10px auto;
+    }
+    /*-----all css-----*/
+    .contestRight {
+        padding: 30px 15px;
+    }
+    .socialIcon {
+        max-width: 35%;
+    }
+    .socialIcon img {
+        width: 25%;
+        padding-left: 2%;
+    }
+    /*-----home.css-----*/
+    /*-----contest.css-----*/
+    /*-----contestdetails.css-----*/
+    /*-----recipedetails.css-----*/
+    /*-----selectedrecipes.css-----*/
+    /*-----profile page-----*/
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1229px) {
+    /*------TOPTAB------*/
+    .topNav {
+        font-size: 13px;
+    }
+    .searchForm input {
+        width: 200px;
+    }
+    .topNav .mainNav ul li {
+        margin-left: 25px;
+    }
+    .userName {
+        max-width: 100px;
+    }
+    .userImg {
+        margin-right: 5px;
+    }
+    /*all css*/
+    .socialIcon {
+        max-width: 35%;
+    }
+    .socialIcon img {
+        padding-left: 4%;
+        width: 25%;
+    }
+    /*-----home.css-----*/
+    /*-----contest.css-----*/
+    /*-----contestdetails.css-----*/
+    /*-----recipedetails.css-----*/
+    /*-----selectedrecipes.css-----*/
+    /*-----profile page-----*/
+}
+
+
+/*-----------------------------------*/
+
+
+/* .topNav .container {
+    width: 100%;
+    max-width: 1440px;
+} */
+
+@media only screen and (max-width: 1229px) {
+    .topNav .mainNav ul li {
+        margin-left: 25px;
+    }
+    .topNav {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .topNav .mainNav ul,
+    .mainSearchbar {
+        display: none;
+    }
+    .mobIcn {
+        display: block;
+        padding: 25.5px 0px;
+        text-align: center;
+    }
+    .mobSearch {
+        border: none;
+        box-shadow: none;
+        position: relative;
+        padding: 25.5px 0px;
+        text-align: center;
+        display: block;
+    }
+    .mobIcn img {
+        width: 27px;
+        height: 27px;
+    }
+    .logo {
+        text-align: start;
+        padding-left: 30px;
+    }
+    .topNav .getQuote {
+        display: none;
+    }
+    .contentSect {
+        padding: 60px 0;
+    }
+    .thumbs {
+        margin: 10px;
+    }
+    .bannerLinks {
+        background-color: rgb(108, 26, 105);
+        position: static;
+    }
+}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 479px) {}
+
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+    .contestRight {
+        width: 100%;
+    }
+}
+
+#megamenu {
+    width: 100%;
+    margin: 0px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+@media only screen and (min-width: 1220px) {
+    #megamenu {
+        width: 82%;
+        left: 9%;
+        right: 9%;
+    }
+}
+
+.padNone {
+    padding: 0px;
+}
+
+.fab {
+    background-color: #ebece9;
+    border-bottom: solid 1px #e6dbdb4d;
+    transition: all 0.1s ease-in-out;
+    color: #323c41;
+    padding: 10px 17px;
+    text-align: left;
+}
+
+.fab ul {
+    display: none;
+}
+
+.fab:hover ul {
+    display: block;
+}
+
+.droup-sub-div {
+    display: none;
+}
+
+.droup-sub .fab {
+    background: #fff;
+    padding: 8px 12px;
+    display: block;
+}
+
+.fab:hover {
+    transform: scale(1.02);
+    background-color: #fff;
+}
+.droup-sub .fab:hover{
+    background: #ebece9;
+}
+#searchBarMob {
+    display: none;
+}
+
+.searchBarSpanMob {
+    text-align: center;
+    padding: 10px 0px;
+    border: 1px solid #f2f2f2;
+}
+
+input.searchBarInputMob {
+    background: #f2f2f2;
+    padding: 5px 55px;
+    height: 35px;
+    color: #666;
+    outline: 0;
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+button.searchBarButtonMob {
+    background-color: transparent;
+    background-size: 19px 19px;
+    background-position: center center;
+    right: 0;
+    width: 60px;
+    height: 35px;
+    font-size: 19px;
+    border: 0;
+    padding: 0;
+    position: absolute;
+}

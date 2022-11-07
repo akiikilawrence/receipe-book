@@ -1,0 +1,1566 @@
+
+.recTitleName {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.recTitle {
+	float:  left;
+	margin: 0;
+	max-width: 65%;
+}
+.topTitle {
+	margin: 30px 0 40px 0;
+}
+
+.recImg {
+	width:  100%;
+	height: auto;
+	max-height: 500px;
+	margin: 40px 0;
+}
+.reciframe{
+	height:500px !important;
+}
+.recImg img {
+	width:  100%;
+	object-fit:  cover;
+	height: 100%;
+}
+
+.recTime {
+	margin: 40px 0;
+}
+
+.recTimeTitle {
+	font-size:  20px;
+	font-weight: 600;
+}
+
+.AllTime {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.prepTime {
+	float: left;
+	width: 33.33%;
+	text-align: left;
+}
+.cookTime {
+	float: left;
+	width: 33.33%;
+	text-align: center;
+}
+.totalTime {
+	float: right;
+	width: 33.33%;
+	text-align: right;
+}
+.AllTime p {
+	color: #a6abb3;
+	font-size: 18px;
+	font-weight: 300;
+}
+.totalTime p {
+	color: #323c41;
+}
+.recIng {
+	margin: 40px 0;
+}
+.prod_href, .prod_href:hover, .prod_href:visited {
+	cursor: pointer;
+	color: #00a551;
+	position: relative;
+}
+.ingImgView{
+	visibility: hidden;
+	width: 120px;
+	height: auto;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	/*padding: 5px 0;*/
+	border-radius: 6px;
+	box-shadow: 0 0 6px rgba(0,0,0,.4);
+	/* Position the tooltip text */
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+
+	/* Fade in tooltip */
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.ingImgView::after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+.prod_href:hover .ingImgView{
+	visibility: visible;
+	opacity: 1;
+}
+.recDesc {
+	margin: 40px 0;
+}
+
+.recIngLeft {
+	font-size: 20px;
+	font-weight: 600;
+	float:  left;
+}
+
+.recIngRight {
+	float:  right;
+}
+
+.recServe {
+	color: #a6abb3;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.recIngNos {
+	list-style-type: none;
+	font-size: 18px;
+	font-weight: 300;
+}
+.ingNos {
+	margin: 10px;
+}
+.recIngTitle {
+	margin-bottom: 10px;
+}
+
+.recDesc {
+	margin: 40px 0;
+}
+
+.descTitle {
+	font-size: 20px;
+	font-weight: 600;
+}
+.recDescTitle {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.descImg {
+	width: 225px;
+	height: 150px;
+	float:  left;
+	margin: 0 20px;
+}
+.descImg img {
+	width:  100%;
+	height: 100%;
+	object-fit:  cover;
+	object-position: center;
+}
+
+.recDescNos {
+	list-style-type:  none;
+	font-size: 18px;
+	font-weight: 300;
+}
+.descLi {
+	margin: 20px 0;
+}
+.descNum {
+	float: left;
+	display: block;
+	width: 26px;
+	height: 26px;
+	background-color: #323c41;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 15px;
+	font-size: 12px;
+	font-weight: 300;
+	cursor: context-menu;
+}
+.descStt {
+	float:  left;
+	margin-left: 40px;
+}
+.descNos {
+	margin: 25px 0;
+}
+.descStep {
+	display: block;
+	padding-left: 40px;
+}
+.recRating {
+	margin: 40px 0;
+}
+.ratingTitle {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	padding-top: 1px;
+	float: left;
+}
+.ratingStar {
+	float: left;
+	margin: 5px 15px;
+	display: flex;
+	align-items: left;
+	font-size: 20px;
+	justify-content: left;
+}
+.ratingBottom {
+	display:flex;
+	position: relative;
+	color:#eaeaea;
+}
+.ratingTop {
+	display:flex;
+	color: #e7711b;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+.ratingStar i {
+	margin: 0 2px;
+}
+.ratingCount {
+	float: left;
+	font-size: 18px;
+	padding-top: 3px;
+}
+.commentText:focus,.commentText,.commentText:hover ,.commentText[disabled]{
+	background-color: #eaeaea;
+	outline: none;
+	border: none;
+	resize: none;
+	min-height: 175px;
+	min-width: 100%;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding: 0;
+	margin-bottom: 15px;
+}
+.cmntLogin {
+	text-align:  center;
+	margin: 30px 0;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.cmntLogin p {
+	color: #a0a0a0;
+	text-transform: none;
+	cursor: pointer;
+}
+.recComment {
+	background-color: #eaeaea;
+	padding: 15px;
+}
+
+.commentRating {
+	float:  left;
+}
+
+.commentButton {
+	float:  right;
+	font-size: 18px;
+	background-color: #323c41;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+
+.cmntBtn , .cmntBtn:hover {
+	color:  #ffffff;
+	cursor: pointer;
+}
+.disableClick{
+	pointer-events: none;
+	cursor: not-allowed;
+}
+/*starRating*/
+.ratingUpdate {
+	float:left;
+}
+
+.ratingUpdate:not(:checked) > input {
+	/*position:absolute;
+	!*top:-9999px;*!
+	clip:rect(0,0,0,0);*/
+	display: none;
+
+}
+fieldset{
+	border:0;
+}
+.ratingUpdate:not(:checked) > label {
+	float:right;
+	width:1em;
+	padding:0 .1em;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+	font-size:200%;
+	line-height:1.2;
+	color:#b9b9b9;
+}
+
+.ratingUpdate:not(:checked) > label:before {
+	content: '★ ';
+}
+
+.ratingUpdate > input:checked ~ label {
+	color: #e7711b;
+}
+
+.ratingUpdate:not(:checked) > label:hover,
+.ratingUpdate:not(:checked) > label:hover ~ label {
+	color: #f70;
+}
+
+.ratingUpdate > input:checked + label:hover,
+.ratingUpdate > input:checked + label:hover ~ label,
+.ratingUpdate > input:checked ~ label:hover,
+.ratingUpdate > input:checked ~ label:hover ~ label,
+.ratingUpdate > label:hover ~ input:checked ~ label {
+	color: #f70;
+}
+
+.ratingUpdate > label:active {
+	position:relative;
+	top:2px;
+	left:2px;
+}
+/*REVIEW SCROLL*/
+.commentText::-webkit-scrollbar{
+	width: 12px;
+}
+
+.commentText::-webkit-scrollbar-track{
+	background: #323c41;
+	border-left: 5.0px solid #eaeaea;
+	border-right: 5.0px solid #eaeaea;
+}
+
+.commentText::-webkit-scrollbar-thumb{
+	background: #323c41;
+	border-left: 5.5px solid #323c41;
+	border-right: 5.5px solid #323c41;
+}
+/*comments*/
+.viewComment {
+	margin-top: 20px;
+}
+
+.commentOne {
+	width: 47%;
+	margin: 1%;
+	padding-bottom: 10px;
+	display: inline-block;
+	vertical-align:top;
+}
+
+.commentImg {
+	width: 40px;
+	height: 40px;
+	float:  left;
+	display: block;
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+	overflow:  hidden;
+}
+.commentImg img {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+}
+.commentedTop {
+	padding: 6px 0;
+}
+.commentName {
+	float: left;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 4px 0;
+}
+.commentName p {
+	margin: 0;
+}
+.commentRate {
+	float: left;
+}
+
+.commentTime {
+	float: right;
+	font-size: 11px;
+	font-weight: 300;
+	width: 100px;
+	padding-top: 5px;
+}
+.commentPadding {
+	display:  block;
+	padding-left: 50px;
+}
+.cmntRatingStr {
+	float: left;
+	margin: 8px 10px;
+	display: flex;
+	align-items: left;
+	font-size: 12px;
+	justify-content: left;
+}
+.cmntRatingStr i {
+	margin: 0 1px;
+}
+.commented {
+	background-color: #eaeaea;
+	padding: 10px;
+	font-size: 12px;
+}
+.commented p {
+	text-transform: unset;
+}
+#seeMore {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #eaeaea;
+	cursor: pointer;
+}
+#seeMore , #seeMore a {
+	cursor: pointer;
+}
+/*recipedetails right*/
+
+.profile .hrefing.pull-left {
+	max-width: calc(100% - 75px);
+	cursor: pointer;
+	display: inline-block;
+	width: auto;
+}
+.profImg img {
+	width: 100%;
+	height: 100%;
+	object-fit:  cover;
+	object-position:  center;
+}
+
+.profImg {
+	float:  left;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ffffff;
+	border-radius:  20px;
+	overflow:  hidden;
+}
+
+.profName {
+	max-width: calc(100% - 40px);
+	float:  left;
+}
+
+.profFollow {
+	float: right;
+	text-align:  center;
+	font-size:  14px;
+	background-color: #323c41;
+}
+
+.pName {
+	font-size: 16px;
+	font-weight: 600;
+}
+.pName , .pCount{
+	text-overflow: ellipsis;
+	width: 100%;
+	white-space: nowrap;
+	cursor: pointer !important;
+	overflow: hidden;
+	padding-left: 10px;
+}
+.pCount {
+	font-size:  12px;
+	font-weight:  400;
+	color: #aaaaaa;
+}
+.pCount:hover{
+	color: #aaaaaa;
+}
+.profFollow span , .profFollow a{
+	color: #ffffff;
+	cursor: pointer;
+	padding: 5px 12px;
+	display: inline-block;
+}
+
+.profile ,.voteRating , .tags, .relatedRec {
+	margin-bottom: 20px;
+}
+.voteHead {
+	font-size: 15px;
+	font-weight: 600;
+}
+.tagHead {
+	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.votes {
+	float: left;
+	max-width: 175px;
+}
+.votNos {
+	float:  left;
+}
+
+.votVot {
+	float:  left;
+	text-transform: none;
+	margin-left: 5px;
+}
+.votLeft {
+	float: left;
+	font-size: 14px;
+    font-weight: 400;
+}
+.votLeft p {
+	text-transform: none;
+	width: 149px;
+}
+.votRight {
+	float: right;
+	text-align: center;
+	background-color: #ff9506;
+/*	border-radius: 5px;*/
+	padding: 6px 0;
+	width: 100px;
+	height: 30px;
+	margin: 3px 0;
+	cursor: pointer;
+}
+.votRight p {
+	color: #fff;
+	cursor: pointer;
+}
+.tagged {
+	float:  left;
+	/*width:  33.33%;
+	height: 30px;*/
+}
+.tagged a {
+	margin: 3px 6px;
+	padding: 5px 15px;
+	background-color: #eaeaea;
+	font-size: 12px;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+	letter-spacing: .5px;
+	cursor: pointer;
+}
+/*.tags {
+	display: none;
+}*/
+
+.relatedTop {
+	margin-bottom:  10px;
+}
+
+.relatedHead {
+	font-size:  16px;
+	font-weight: 600;
+	float:  left;
+}
+
+.relatedMore {
+	float:  right;
+	font-size: 12px;
+	font-weight: 600;
+	padding-top:  2px;
+}
+
+.relatedMore a {
+	color: #e7711b;
+}
+
+.relatedShow {
+	display:  block;
+}
+
+.relatedOne {
+	display:  inline-block;
+	width: 46%;
+	margin:  1%;
+	margin-bottom: 4%;
+	vertical-align:  top;
+	overflow: hidden;
+}
+
+.relatedImg img {
+	width:  100%;
+	height:  100%;
+	object-fit:  cover;
+	object-position:  center;
+}
+.relatedImg {
+	width: 100%;
+	height: 90px;
+}
+
+.relatedName {
+	font-size:  12px;
+}
+.relatedName p {
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	cursor: pointer;
+	overflow: hidden;
+}
+/*view img*/
+.row > .column {
+	padding: 0 8px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	width: 25%;
+}
+
+/* The Modal (background) */
+#myMod.modal {
+	display: none;
+	position: fixed;
+	z-index: 1040;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: auto;
+	opacity: 1;
+}
+
+/* Modal Content */
+#myMod .modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	margin-top: 30px;
+	width: 800px;
+	height: 600px;
+	z-index: 1050;
+}
+
+/* The Close Button */
+#myMod .close {
+	color: #4e4e4e;
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	font-size: 30px;
+	font-weight: bold;
+	opacity: .6;
+	cursor: pointer
+}
+
+#myMod .close:hover,
+#myMod .close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#myMod .mySlides {
+	display: none;
+	height: calc(100% - 40px);
+	overflow: hidden;
+	margin: 20px;
+}
+
+
+/* Next & previous buttons */
+#myMod .prev,
+#myMod .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: #bfbfbf;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Position the "next button" to the right */
+#myMod .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#myMod .prev:hover,
+#myMod .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+#myMod .numbertext {
+	color: #cbcbcb;
+	font-size: 14px;
+	padding: 2px 0px;
+	position: absolute;
+	top: 0;
+}
+
+#myMod img {
+	margin-bottom: -4px;
+	height: 100%;
+	width: 100%;
+	object-position: center;
+	object-fit: contain;
+}
+
+#myMod .caption-container {
+	text-align: center;
+	background-color: black;
+	padding: 2px 16px;
+	color: white;
+}
+
+#myMod .demo {
+	opacity: 0.6;
+}
+
+#myMod .active,
+#myMod .demo:hover {
+	opacity: 1;
+}
+
+#myMod .hover-shadow {
+	transition: 0.3s
+}
+.blurr{
+	-webkit-filter: blur(4px);
+	-moz-filter: blur(4px);
+	-o-filter: blur(4px);
+	-ms-filter: blur(4px);
+	filter: blur(4px);
+}
+
+#snackbar {
+	visibility: hidden;
+	min-width: 150px;
+	margin-left: -125px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	padding: 10px;
+	position: fixed;
+	z-index: 1;
+	left: 50%;
+	bottom: 30px;
+}
+.showsnackbar {
+	visibility: visible !important;
+	-webkit-animation: snackbarin 0.5s, snackbarout 0.5s 1s;
+	animation: snackbarin 0.5s, snackbarout 0.5s 1s;
+}
+@-webkit-keyframes snackbarin {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes snackbarin {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes snackbarout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+}
+
+@keyframes snackbarout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+}
+
+
+/*-----responsive end-----*/
+@media only screen and (min-width: 200px) and (max-width: 479px){
+
+	.topTitle {
+		margin:  10px;
+	}
+
+	.recTitle {
+		max-width:  100%;
+	}
+
+	.recTitleName {
+		font-size: 20px;
+	}
+
+	.recImg {
+		margin:  0;
+		height: auto;
+		max-height: 300px;
+	}
+	.reciframe{
+		height:300px !important;
+	}
+	.recTime {
+		margin: 10px;
+	}
+
+	.recTimeTitle,.recIngLeft,.descTitle,.ratingTitle {
+		font-size: 20px;
+	}
+
+	.AllTime p {
+		font-size: 12px;
+		font-weight: 600;
+	}
+	.recServe {
+		font-size: 12px;
+		padding-top: 4px;
+	}
+
+	.recIng {
+		margin: 10px;
+	}
+
+	.AllTime {
+		margin-top: 5px;
+	}
+
+	.recIngTitle {
+		margin-bottom: 5px;
+	}
+	.recServe {
+		font-size: 12px;
+		padding-top: 4px;
+	}
+
+	.recIng {
+		margin: 20px 10px;
+	}
+
+	.AllTime {
+		margin-top: 5px;
+	}
+
+	.recIngTitle {
+		margin-bottom: 5px;
+	}
+
+	.recIngNos {
+		font-size: 12px;
+	}
+
+	.ingNos {
+		margin: 0 10px;
+	}
+	.recDesc {
+		margin: 20px 10px;
+	}
+
+	.recDescNos {
+		font-size:  12px;
+	}
+
+	.descNos {
+		margin: 5px 0;
+	}
+	.descImg {
+		margin: 0 10px;
+		width: 75px;
+		height: 50px;
+	}
+
+	.descNum {
+		width: 24px;
+		height: 24px;
+		font-size: 10px;
+	}
+
+	.recRating {
+		margin: 20px 10px;
+	}
+
+	.ratingStar {
+		font-size: 16px;
+		margin: 5px 20px;
+	}
+
+	.ratingCount {
+		font-size:  14px;
+		margin-left: 10px;
+		padding-top: 5px;
+	}
+
+	.recComment {
+		padding: 5px;
+	}
+
+	.commentText {
+		font-size: 12px;
+		min-height: 75px;
+	}
+
+	.commentButton {
+		font-size: 12px;
+		padding: 3px 10px;
+	}
+
+	.viewComment {
+		margin-top: 10px;
+	}
+
+	.commentOne {
+		width: 98%;
+	}
+
+	.commentImg {
+		width: 30px;
+		height: 30px;
+	}
+
+	.commentPadding {
+		padding-left: 35px;
+	}
+
+	.commentName {
+		padding:  0;
+		font-size: 12px;
+	}
+	.cmntRatingStr {
+		margin: 3px 10px;
+	}
+	.ratingStr {
+		font-size: 16px;
+	}
+	.commentTime {
+		font-size: 9px;
+		font-weight: 300;
+		width: 85px;
+	}
+
+	.ratingUpdate:not(:checked) > label {
+		font-size:  100%;
+	}
+	#seeMore {
+		margin-top: 10px;
+		font-size: 12px;
+	}
+	/*gallery*/
+	#myMod .modal-content {
+		width: 320px;
+		height: 90vh;
+		margin: 5vh auto;
+	}
+	#myMod .mySlides {
+		padding: 20px 0;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+
+	.topTitle {
+		margin:  10px;
+	}
+
+	.recTitle {
+		max-width:  100%;
+	}
+
+	.recTitleName {
+		font-size: 20px;
+	}
+
+	.recImg {
+		margin:  0;
+		height: auto;
+		max-height: 350px;
+	}
+	.reciframe{
+		height:350px !important;
+	}
+	.recTime {
+		margin: 10px;
+	}
+
+	.recTimeTitle,.recIngLeft,.descTitle,.ratingTitle {
+		font-size: 20px;
+	}
+
+	.AllTime p {
+		font-size: 12px;
+		font-weight: 600;
+	}
+	.recServe {
+		font-size: 12px;
+		padding-top: 4px;
+	}
+
+	.recIng {
+		margin: 10px;
+	}
+
+	.AllTime {
+		margin-top: 5px;
+	}
+
+	.recIngTitle {
+		margin-bottom: 5px;
+	}
+	.recServe {
+		font-size: 12px;
+		padding-top: 4px;
+	}
+
+	.recIng {
+		margin: 20px 10px;
+	}
+
+	.AllTime {
+		margin-top: 5px;
+	}
+
+	.recIngTitle {
+		margin-bottom: 5px;
+	}
+
+	.recIngNos {
+		font-size: 12px;
+	}
+
+	.ingNos {
+		margin: 0 10px;
+	}
+	.recDesc {
+		margin: 20px 10px;
+	}
+
+	.recDescNos {
+		font-size:  12px;
+	}
+
+	.descNos {
+		margin: 5px 0;
+	}
+	.descImg {
+		margin: 0 10px;
+		width: 110px;
+		height: 70px;
+	}
+
+	.descNum {
+		width: 24px;
+		height: 24px;
+		font-size: 10px;
+	}
+
+	.recRating {
+		margin: 20px 10px;
+	}
+
+	.ratingStar {
+		font-size: 16px;
+		margin: 5px 25px;
+	}
+
+	.ratingCount {
+		font-size:  14px;
+		margin-left: 10px;
+		padding-top: 5px;
+	}
+
+	.recComment {
+		padding: 5px;
+	}
+
+	.commentText {
+		font-size: 12px;
+		min-height: 75px;
+	}
+
+	.commentButton {
+		font-size: 12px;
+		padding: 3px 10px;
+	}
+
+	.viewComment {
+		margin-top: 10px;
+	}
+
+	.commentOne {
+		width: 98%;
+	}
+
+	.commentImg {
+		width: 30px;
+		height: 30px;
+	}
+
+	.commentPadding {
+		padding-left: 35px;
+	}
+
+	.commentName {
+		padding:  0;
+		font-size: 12px;
+	}
+	.cmntRatingStr {
+		margin: 3px 10px;
+	}
+	.ratingStr {
+		font-size: 16px;
+	}
+
+	.commentTime {
+		font-size: 9px;
+		font-weight: 300;
+		width: 85px;
+	}
+
+	.ratingUpdate:not(:checked) > label {
+		font-size:  100%;
+	}
+	#seeMore {
+		margin-top: 10px;
+		font-size: 12px;
+	}
+	.profName {
+		max-width: 260px;
+	}
+	.relatedImg {
+		height: 124px;
+	}
+	/*gallery*/
+	#myMod .modal-content {
+		width: 480px;
+		height: 90vh;
+		margin: 5vh auto;
+	}
+}
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+
+	.topTitle {
+		margin:  10px;
+	}
+
+	.recTitle {
+		max-width:  100%;
+	}
+
+	.recTitleName {
+		font-size: 20px;
+	}
+
+	.recImg {
+		margin:  0;
+		height: auto;
+		max-height: 400px;
+	}
+	.reciframe{
+		height:400px !important;
+	}
+	.recTime {
+		margin: 10px;
+	}
+
+	.recTimeTitle,.recIngLeft,.descTitle,.ratingTitle {
+		font-size: 20px;
+	}
+
+	.AllTime p {
+		font-size: 12px;
+		font-weight: 600;
+	}
+	.recServe {
+		font-size: 12px;
+		padding-top: 4px;
+	}
+
+	.recIng {
+		margin: 10px;
+	}
+
+	.AllTime {
+		margin-top: 5px;
+	}
+
+	.recIngTitle {
+		margin-bottom: 5px;
+	}
+	.recServe {
+		font-size: 12px;
+		padding-top: 4px;
+	}
+
+	.recIng {
+		margin: 20px 10px;
+	}
+
+	.AllTime {
+		margin-top: 5px;
+	}
+
+	.recIngTitle {
+		margin-bottom: 5px;
+	}
+
+	.recIngNos {
+		font-size: 12px;
+	}
+
+	.ingNos {
+		margin: 0 10px;
+	}
+	.recDesc {
+		margin: 20px 10px;
+	}
+
+	.recDescNos {
+		font-size:  12px;
+	}
+
+	.descNos {
+		margin: 5px 0;
+	}
+	.descImg {
+		margin: 0 10px;
+		width: 150px;
+		height: 100px;
+	}
+
+	.descNum {
+		width: 24px;
+		height: 24px;
+		font-size: 10px;
+	}
+
+	.recRating {
+		margin: 20px 10px;
+	}
+	.cmntRatingStr {
+		margin: 3px 10px;
+	}
+	.ratingStar {
+		font-size: 16px;
+	}
+
+	.ratingCount {
+		font-size:  14px;
+		margin-left: 10px;
+		padding-top: 5px;
+	}
+
+	.recComment {
+		padding: 5px;
+	}
+
+	.commentText {
+		font-size: 12px;
+		min-height: 125px;
+	}
+
+	.commentButton {
+		font-size: 12px;
+		padding: 3px 10px;
+	}
+
+	.viewComment {
+		margin-top: 10px;
+	}
+
+	.commentOne {
+		width: 98%;
+	}
+
+	.commentImg {
+		width: 30px;
+		height: 30px;
+	}
+
+	.commentPadding {
+		padding-left: 35px;
+	}
+
+	.commentName {
+		padding:  0;
+		font-size: 12px;
+	}
+
+	.commentRate .ratingStar {
+		font-size: 16px;
+	}
+	.ratingStr {
+		font-size: 16px;
+	}
+
+	.commentTime {
+		font-size: 9px;
+		font-weight: 300;
+		width: 85px;
+	}
+
+	.ratingUpdate:not(:checked) > label {
+		font-size:  100%;
+	}
+	.profName {
+		max-width: 360px;
+	}
+	#seeMore {
+		margin-top: 10px;
+		font-size: 12px;
+	}
+	.relatedImg {
+		height: 150px;
+	}
+	/*gallery*/
+	#myMod .modal-content {
+		width: 640px;
+		height: 90vh;
+		margin: 5vh auto;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+	.recTitle {
+		max-width: 65%;
+	}
+
+	.recTitleName {
+		font-size: 22px;
+	}
+	.recImg {
+		height: auto;
+		max-height: 400px;
+		margin: 20px 0;
+	}
+	.reciframe{
+		height:400px !important;
+	}
+	.topTitle, .recTime, .recIng, .recDesc, .recRating {
+		margin: 20px 0;
+	}
+
+	.recTimeTitle, .recIngLeft, .descTitle,.ratingTitle {
+		font-size: 20px;
+	}
+
+	.AllTime p {
+		font-size: 12px;
+	}
+
+
+	.recServe, .recIngNos,.recDescNos {
+		font-size: 14px;
+	}
+
+	.ingNos {
+		margin: 5px;
+	}
+
+	.descImg {
+		margin: 0 10px;
+		width: 150px;
+		height: 100px;
+	}
+
+	.descNos {
+		margin:  10px 0;
+	}
+
+	.ratingStar {
+		font-size: 20px;
+		margin: 5px 25px;
+	}
+
+	.ratingCount {
+		margin-left: 20px;
+		font-size: 18px;
+		padding-top: 4px;
+	}
+
+	.recComment {
+		padding: 10px;
+	}
+
+	.commentText:focus, .commentText, .commentText:hover {
+		min-height: 125px;
+	}
+
+	.ratingUpdate:not(:checked) > label {
+		font-size: 100%;
+	}
+
+	.commentButton {
+		font-size: 12px;
+	}
+
+	.viewComment {
+		margin-top: 10px;
+	}
+
+	.commentImg {
+		width: 30px;
+		height: 30px;
+	}
+
+	.commentPadding {
+		padding-left: 40px;
+	}
+
+	.commentName {
+		padding: 2px 0;
+		font-size: 14px;
+	}
+
+	.commentOne {
+		width: 98%;
+	}
+
+	.cmntRatingStr {
+		margin: 6px 10px;
+	}
+	.commentTime {
+		font-size: 10px;
+		width: 95px;
+	}
+
+	#seeMore {
+		margin-top: 10px;
+		font-size: 14px;
+	}
+
+	.profImg {
+		width: 30px;
+		height: 30px;
+		margin-right:  5px;
+	}
+
+	.voteHead, .tagHead,.relatedHead {
+		font-size: 14px;
+	}
+
+	.relatedMore {
+		font-size: 10px;
+		padding-top: 4px;
+	}
+
+	.relatedImg {
+		height: 65px;
+	}
+
+	.profFollow {
+		font-size: 12px;
+		padding: 4px 8px;
+	}
+
+	.pName {
+		font-size: 14px;
+	}
+	.votLeft {
+		font-size: 12px;
+	}
+
+	.votes {
+		max-width: 135px;
+	}
+
+	.votRight {
+		font-size: 12px;
+		padding: 5px 0;
+		height: 25px;
+		width: 60px;
+		margin: 5px 0;
+	}
+	/*gallery*/
+	#myMod .modal-content {
+		width: 770px;
+		height: 90vh;
+		margin: 5vh auto;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1229px) {
+	.recImg {
+		width: 100%;
+		height: auto;
+		max-height: 400px;
+		margin: 40px 0;
+	}
+	.reciframe{
+		height:400px !important;
+	}
+	.relatedImg {
+		height: 75px;
+	}
+	.commentPadding {
+		padding-left: 40px;
+	}
+
+	.commentImg {
+		width: 35px;
+		height: 35px;
+	}
+
+	.commentName {
+		font-size: 12px;
+		padding: 3px 0;
+	}
+
+	.cmntRatingStr {
+		font-size: 10px;
+		margin: 5px 10px;
+	}
+
+	.commentTime {
+		font-size: 9px;
+		font-weight: 100;
+		width: 85px;
+		padding-top: 5px;
+	}
+	.pName {
+		font-size: 14px;
+	}
+	.votes {
+		max-width: 155px;
+	}
+
+	.votRight {
+		width: 76px;
+		font-size:  14px;
+	}
+}

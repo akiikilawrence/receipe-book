@@ -1,93 +1,170 @@
-html {
-    background-color:rgb(229, 255, 242);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #f8fafc;
+    color: #6b7280;
 }
 
-p{
-    line-height:1.5em;
+/* reset <a> */
+a {
+    text-decoration: none;
+    color: #6b7280;
 }
 
-#main-heading {
-    font-family: 'Caveat', cursive;
-    font-size: 3em;
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+
+.big-text {
     text-align: center;
-    border-bottom: 2px solid #416788;
-    color:rgb(255, 167, 0);
-    background-color:rgb(230, 230, 250);
-}
-#main-heading:hover, #main-heading:focus {
-    background-color: #416788;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    color: orangered;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
-.recipe {
-    color:rgb(0, 49 , 83); 
-    background-color:/* #7D82B8*/ rgb(204, 149, 204);
-    border: 1px solid #7D82B8 ;
-}
-.contents {
-    border: 5px groove #5FB49C;
-    background-color: #98DFAF;
-    padding-left: 5px;
+/* nav bar styles */
+.navbar {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-ol.contents {
-    padding-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+.nav-item {
+    margin-right: 20px;
 }
 
-
-table {
-    margin: 5px;
-    border: 2px solid #B7E3CC;
-    font-family: Lato, sans-serif;
+.nav-item:hover {
+    color: #f97316;
 }
 
-table:hover, table:active, table:focus {
-    background-color: #B7E3CC;
+.content {
+    margin-bottom: 30px;
 }
 
-.recipe {
-    border: 2px solid #2B4162;
-    padding: 1px 0px 1px 5px;
-    border-radius: 7px;
+.content p {
+    text-align: center;
+}
+
+.content-banner {
+    background-image: url("../images/Pizza_Margherita_stu_spivack.jpg");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.banner-info {
+    padding-top: 30px;
+    padding-left: 30px;
+    color: white;
+}
+
+.banner-info button a {
+    color: blue;
+}
+
+.banner-info button {
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.categories-receipe {
+    margin-top: 20px;
+    margin-left: 80px;
+    text-align: left;
+}
+
+ul li {
+    padding-left: 200px;
+    list-style-type: none;
+    padding-top: 20px;
+    color: blue;
+}
+
+.bg-image {
+    background-image: url("../images/1573742029.jpg");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.more {
+    color: black;
+}
+
+/* contact page */
+.contact-form p {
+    text-align: center;
+}
+
+.contact-form form {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.custom-input {
+    width: 50%;
+    display: block;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+textarea {
+    width: 50%;
+    padding: 8px;
+}
+
+.button-area {
+    padding-left: 6px;
+    padding-right: 6px;
+    color: blue;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: grey;
+    border: none;
+}
+
+.recipe-steps {
+    margin-top: 20px;
+}
+
+.recipe-title {
+    color: orangered;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.recipe-title:hover {
+    color: black;
+}
+
+.table-image {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .image {
-    width: 150px;
-    float: right;
-    border: 10px ridge #FA9F42;
-    margin-right: 5px;
-    padding: 1px;
+    height: 600px;
+    width: 100%;
 }
 
-.image:hover, .image:active, .image:focus {
-    width: 200px;
-    position: relative;
-}
+.button a {
+    padding: 10px;
+    border-radius: 4px;
+    color: blue;
 
-a:hover, a:active, a:focus {
-    background-color: #FA9F42;
-    border:2px solid #416788;
-    border-radius: 20px;
-    padding: 5px;
-}
-
-#spl-para {
-    line-height:1em;
-    font-size:0.8em;
-    font-weight: bold;
-}
-#spl-image {
-    position:absolute;
-    margin-top: -128px;
-    margin-left:442px;
-    width:60px;
-    z-index:2;
-}
-
-/* I just learnt about the selection */
-::selection {
-    background-color: rgb(29, 204, 160);
-    color: rgb(255, 0, 64);
 }
